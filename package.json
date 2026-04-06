@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "sass": "^1.99.0"
+  },
+  "scripts": {
+    "build:wc": "sass modules/Web-creator/UI-UX/sass:modules/Web-creator/UI-UX/css",
+    "watch:wc": "sass --watch modules/Web-creator/UI-UX/sass:modules/Web-creator/UI-UX/css",
+    "build:home": "sass modules/Home/UI-UX/sass:modules/Home/UI-UX/css",
+    "watch:home": "sass --watch modules/Home/UI-UX/sass:modules/Home/UI-UX/css",
+    "build:sign-in": "sass modules/Sign-in/UI-UX/sass:modules/Sign-in/UI-UX/css",
+    "watch:sign-in": "sass --watch modules/Sign-in/UI-UX/sass:modules/Sign-in/UI-UX/css"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kreator stron</title>
+        <script type="module" src="modules/Web-creator/Engine/main.js" defer></script>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="nav">
+            <div id="img-box">
+            <img class="logo" src="base_assets/obrazki/bitmapa.svg">
+            </div>
+            <div id="tool_bar" class="tool_bar">
+                <button class="button" id="content_tool">Treść</button>
+                <button class="button" id="content_tool">Styl</button>
+                <button class="button" id="content_tool">Dodatki</button>
+            </div>
+        </div>
+        <div class="main">
+        <div id="content_tool_wrapper" class="content_tool_wrapper">
+            <h3>Stwórz element</h3>
+            <div class="container">
+                <h4>Strony</h4>
+                <select id="pagesList">
+                    <option value="page1">Strona główna</option>
+                </select>
+                <button class="button" id="addNewPage">Dodaj stronę</button>
+            </div>
+            <div class="container">
+                <h4>wybierz strefę</h4>
+                <select id="inputZone" title="Strefa layoutu">
+                    <option value="header">Nawigacja</option>
+                    <option value="main" selected>Główna</option>
+                    <option value="footer">Stopka</option>
+                </select>
+            </div>
+                <div class="container">
+                    <h4>Wybierz rodzaj</h4>
+                    <select id="inputType">
+                        <option value="heading">Nagłówek</option>
+                        <option value="text">Tekst</option>
+                        <option value="image">Obraz</option>
+                        <option value="video">Video</option>
+                    </select>
+                </div>
+                <div class="container">
+                    <h4>Wpisz treść</h4>
+                    <input id="inputContent" placeholder="wpisz tekst"/>
+                    <button id="addNewSection" class="button">Dodaj sekcję</button>
+                </div>
+            </div>
+        <iframe id="app" class="preview_box" src="modules/Web-creator/Created_website/template.html"></iframe>
+        </div>
+    </body>
+</html>

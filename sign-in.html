@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNK System X</title>
+    <link rel="stylesheet" href="">
+    <script src="" defer></script>
+</head>
+<body>
+    <div id="hero-section" class="hero-section">
+    <div id="welcome" class="welcome section">
+        <img class="logo" src="/bazowe_elementy/obrazki/bitmapa.svg" alt="BNK System X">
+        <p>BNK System X to łatwę zarządzanie klientami i projektami.</p>
+    </div>
+    <div id="welcome-box" class="welcome-box">
+        <button id="sign-in-button">Zaloguj się</button>
+        <button id="sign-up-button">Rejestracja</button>
+    </div>
+    </div>
+    <div id="sing-in" class="section hidden">
+        <h2>Zaloguj się</h2>
+        <div id="sing-box" class="section">
+            <label for="log-email">Email</label>
+            <input type="email" id="log-email" name="email" required>
+            <label for="log-password">Hasło</label>
+            <input type="password" id="log-password" name="password" required>
+            <button type="submit" class="button" id="log-button">Zaloguj się</button>
+            <a href="home/home.html">Test</a>
+            <button type="button" class="button" id="button-back">Wróć</button>
+        </div>
+    </div>
+    <div id="sing-up" class="section hidden">
+        <h2>Rejestracja</h2>
+        <div id="sing-box" class="section">
+            <label for="reg-name">Imię</label>
+            <input type="text" id="reg-name" name="name">
+            <label for="reg-email">Email</label>
+            <input type="email" id="reg-email" name="email">
+            <label for="reg-password">Hasło</label>
+            <input type="password" id="reg-password" name="password">
+            <label for="reg-code">Kod rejestracyjny</label>
+            <input type="text" id="reg-code" name="code">
+            <button type="submit" class="button" id="reg-button">Rejestracja</button>
+            <button type="button" class="button" onclick="backToWelcome()" id="button-back">Wróć</button>
+        </div>
+    </div>
+</body>
+</html>

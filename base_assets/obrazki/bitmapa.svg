@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="174.52621mm"
+   height="76.871696mm"
+   viewBox="0 0 174.52621 76.871696"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient11">
+      <stop
+         style="stop-color:#c738fe;stop-opacity:1;"
+         offset="0.07779885"
+         id="stop12" />
+      <stop
+         style="stop-color:#003efe;stop-opacity:0.77123559;"
+         offset="0.52699482"
+         id="stop14" />
+      <stop
+         style="stop-color:#1beee1;stop-opacity:0.72515458;"
+         offset="1"
+         id="stop13" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9">
+      <stop
+         style="stop-color:#9023ff;stop-opacity:1;"
+         offset="0"
+         id="stop9" />
+      <stop
+         style="stop-color:#4c31fe;stop-opacity:0.8745098;"
+         offset="0.5"
+         id="stop11" />
+      <stop
+         style="stop-color:#09d0fd;stop-opacity:0.75371569;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4">
+      <stop
+         style="stop-color:#6d00dc;stop-opacity:0.6699695;"
+         offset="0"
+         id="stop4" />
+      <stop
+         style="stop-color:#004dd0;stop-opacity:0.71454734;"
+         offset="0.5"
+         id="stop6" />
+      <stop
+         style="stop-color:#23e8ff;stop-opacity:1;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient4"
+       id="linearGradient5"
+       x1="74.725533"
+       y1="26.722134"
+       x2="201.82327"
+       y2="26.722134"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient9"
+       id="linearGradient10"
+       x1="60.766422"
+       y1="68.006821"
+       x2="182.85052"
+       y2="68.006821"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient11"
+       id="linearGradient13"
+       x1="212.83633"
+       y1="85.688507"
+       x2="212.83633"
+       y2="50.857269"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter14"
+       x="-0.0021340637"
+       y="-0.011229794"
+       width="1.0042681"
+       height="1.0224596">
+      <feGaussianBlur
+         stdDeviation="0.0036915691"
+         id="feGaussianBlur14" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-62.938006,-5.34545)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:58.1284px;line-height:14.9;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0.905835px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient5);fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:3.5074;stroke-opacity:1;paint-order:markers fill stroke"
+       x="71.218475"
+       y="47.473991"
+       id="text2"
+       transform="scale(1.1168889,0.89534419)"><tspan
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:58.1284px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient5);stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         x="71.218475"
+         y="47.473991">BNK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:31.4048px;line-height:14.9;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0.367044px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;fill:#d5d5d5;fill-opacity:0.857707;fill-rule:evenodd;stroke:url(#linearGradient10);stroke-width:0.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:3.5074;paint-order:markers fill stroke;filter:url(#filter14)"
+       x="59.777149"
+       y="79.218346"
+       id="text3"
+       transform="scale(1.0334627,0.96762079)"><tspan
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:31.4048px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#d5d5d5;fill-opacity:0.857707;stroke:url(#linearGradient10);stroke-width:0.5;stroke-dasharray:none"
+         x="59.777149"
+         y="79.218346">SYSTEM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:46.8793px;line-height:14.9;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0.547902px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient13);fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:3.5074;paint-order:markers fill stroke"
+       x="195.9129"
+       y="85.008812"
+       id="text4"
+       transform="scale(1.0339548,0.96716028)"><tspan
+         id="tspan4"
+         style="fill:url(#linearGradient13);stroke-width:0;stroke-dasharray:none"
+         x="195.9129"
+         y="85.008812">X</tspan></text>
+  </g>
+</svg>

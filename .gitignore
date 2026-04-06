@@ -1,0 +1,17 @@
+# Zależności
+node_modules/
+
+# Logi i śmieci od narzędzi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Edytor
+.idea/
+*.swp
+*.swo
