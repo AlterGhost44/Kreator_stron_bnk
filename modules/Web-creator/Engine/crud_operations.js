@@ -10,10 +10,9 @@ import { render } from "./render.js";
 //** POBIERANIE WARTOSCI UZYTKOWNIKA **
 //*************************************
 
-const inputedType = document.getElementById("inputType");
-const inputedContent = document.getElementById("inputContent");
-const inputZone = document.getElementById()
-                                          //*************************************
+
+                                         
+//*************************************
 //**** DODAWANIE ELEMENTU DO STATE ****
 //*************************************
 

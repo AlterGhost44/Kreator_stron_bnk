@@ -1,29 +1,14 @@
-export const zoneMap = {
-    header: null,
-    main: null,
-    footer: null
-};
+//*************************************
+//********** IMPORT FUNKCJI  **********
+//*************************************
 
-export const preview = {
-    iframe: null,
-    iframeDoc: null
-};
+import { state } from "./data.js";
+import { loadLocalStorage } from "./data_menagment.js";
 
-export function init(onReady) {
-    const app = document.getElementById("app");
+//*************************************
+//********** INITIALIZE WEBSITE **********
+//*************************************
 
-    function boot() {
-        preview.iframe = document.getElementById("app");
-        preview.iframeDoc = preview.iframe.contentDocument;
-        zoneMap.header = preview.iframeDoc.getElementById("header");
-        zoneMap.main = preview.iframeDoc.getElementById("main");
-        zoneMap.footer = preview.iframeDoc.getElementById("footer");
-        onReady?.();
-    };
-
-    if (app.contentDocument) {
-        boot();
-    } else {
-        app.addEventListener("load", boot);
-    }
+export function init() {
+    loadLocalStorage();
 }
