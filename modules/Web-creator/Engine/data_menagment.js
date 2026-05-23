@@ -2,13 +2,13 @@
 //********** IMPORT FUNKCJI  **********
 //*************************************
 
-import { state, style_css } from "data.js"
+import { state } from "./data.js"
 
 //*************************************
 //******** ZAPIS LOCALSTORAGE  ********
 //*************************************
 
-function saveLocalStorage(state) {
+export function saveLocalStorage(state) {
     localStorage.setItem('HTML', JSON.stringify(state))  
 }
 
@@ -16,7 +16,7 @@ function saveLocalStorage(state) {
 //******* WCZYTANIE LOCALSTORAGE ******
 //*************************************
 
-function loadLocalStorage() {
+export function loadLocalStorage() {
     const loaded_save = JSON.parse(localStorage.getItem('HTML'))
 
     Object.assign(state, loaded_save)
@@ -25,10 +25,10 @@ function loadLocalStorage() {
 //*************************************
 //****** AUTOSAVE LOCALSTORAGE  *******
 //*************************************
-
-function autoSave () {
+let timer;
+export function autoSave () {
     clearTimeout(timer)
-    let timer = setTimeout(() => {
+    timer = setTimeout(() => {
         saveLocalStorage()
     }, 200)
 }

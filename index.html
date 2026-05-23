@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kreator stron</title>
+
+    <script type="module" src="./modules/Web-creator/Engine/main.js" defer></script>
+
+    <link rel="stylesheet" href="./modules/Web-creator/UI-UX/css/main.css" />
+  </head>
+
+  <body>
+
+    <!-- =========================
+       HEADER
+  ========================== -->
+
+    <header id="header">
+
+      <img id="logo" src="./base_assets/image/bitmapa.svg" alt="BNK System X" />
+
+      <button id="menu-button" class="menu_button">
+        Menu
+      </button>
+
+      <!-- TOOLBAR -->
+
+      <nav id="menu-bar" class="toolbar">
+        <button id="save-button" class="btn">
+          Zapisz
+        </button>
+
+        <button id="load-button" class="btn">
+          Wczytaj
+        </button>
+
+        <button id="new-button" class="btn">
+          Nowy
+        </button>
+
+        <button id="close-button" class="btn">
+          Zamknij
+        </button>
+
+        <button id="export-button" class="btn">
+          Eksportuj
+        </button>
+
+        <button id="import-button" class="btn">
+          Importuj
+        </button>
+      </nav>
+
+    </header>
+
+    <!-- =========================
+       MAIN
+  ========================== -->
+
+    <main>
+
+      <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+      <aside id="aside-wrapper" class="aside-wrapper">
+
+        <!-- PANEL -->
+
+        <section id="aside-property" class="aside-property">
+          
+          <!-- TOGGLE BUTTON -->
+
+        <button id="tool-btn" class="tool-btn">
+          Właściwości
+        </button>
+
+          <!-- TABS -->
+
+          <div id="block_prop_header" class="prop-header">
+
+            <button id="prop_element" class="btn">
+              Element
+            </button>
+
+            <button id="prop_style" class="btn">
+              Styl
+            </button>
+
+          </div>
+
+          <!-- ELEMENT -->
+
+          <section id="block_element">
+            <h4>Gdzie dodać</h4>
+            <select id=taget>
+              <option value="root">Strona</option>
+              <option value="1">Nawigacja</option>
+              <option value="2">Główny</option>
+              <option value="3">Stopka</option>
+            </select>
+              
+            </select>
+
+            <h4>Wybierz co chcesz dodać</h4>
+
+            <select id="type">
+
+              <option value="h1">
+                Nagłówek
+              </option>
+
+              <option value="p">
+                Tekst
+              </option>
+
+              <option value="div">
+                Sekcja
+              </option>
+
+              <option value="button">
+                Przycisk
+              </option>
+
+            </select>
+
+          </section>
+
+          <!-- CONTENT -->
+
+          <section id="block_content">
+
+            <label for="content-input">
+              Treść
+            </label>
+
+            <input id="content-input" type="text" name="content" placeholder="Co ma zawierać element" />
+
+          </section>
+
+          <!-- STYLE -->
+
+          <section id="block_style">
+
+            <label for="style-input">
+              Kolor
+            </label>
+
+            <input id="style-input" type="color" name="style" value="#ffffff" />
+
+          </section>
+
+        </section>
+
+      </aside>
+
+      <!-- =========================
+         DEVICE MODE
+    ========================== -->
+
+      <section class="slider_box">
+
+        <p>MOBILE</p>
+
+        <input class="select_mode" type="range" name="slider" min="0" max="1" value="0" />
+
+        <p>DESKTOP</p>
+
+      </section>
+
+      <!-- =========================
+         WEBSITE PREVIEW
+    ========================== -->
+
+      <iframe id="iframe" src="./modules/Web-creator/Created_website/template.html"></iframe>
+
+      <!-- =========================
+         WEBSITE TREE
+    ========================== -->
+
+      <aside id="aside_tree" class="aside_tree">
+
+        <h4>Gałęzie strony</h4>
+
+        <div id="web_tree"></div>
+
+      </aside>
+
+    </main>
+
+  </body>
+
+</html>

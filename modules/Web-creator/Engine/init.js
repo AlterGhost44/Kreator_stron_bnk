@@ -10,5 +10,5 @@ import { loadLocalStorage } from "./data_menagment.js";
 //*************************************
 
 export function init() {
-    loadLocalStorage();
+	loadLocalStorage();
 }

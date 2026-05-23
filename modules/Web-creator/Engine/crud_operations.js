@@ -10,8 +10,11 @@ import { render } from "./render.js";
 //** POBIERANIE WARTOSCI UZYTKOWNIKA **
 //*************************************
 
-
-                                         
+const config = {
+  type: document.querySelector("#type").value,
+  source_link: document.querySelector("#source_link").value,
+  content: document.querySelector("#content-input").value,
+}                                   
 //*************************************
 //**** DODAWANIE ELEMENTU DO STATE ****
 //*************************************
