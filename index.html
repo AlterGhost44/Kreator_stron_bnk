@@ -14,87 +14,36 @@
   </head>
 
   <body>
-
-    <!-- Top toolbar (fixed) -->
-    <header id="topbar" class="topbar" role="banner">
-      <div class="topbar-left">
-        <button id="left-toggle" class="icon-btn" aria-label="Toggle left sidebar">☰</button>
-        <img id="logo" src="./base_assets/image/bitmapa.svg" alt="BNK" />
-        <h1 class="project-title" contenteditable="true" aria-label="Project title">Nowy Projekt</h1>
-      </div>
-
-      <div class="topbar-center">
-        <div class="device-switcher" role="toolbar" aria-label="Responsive preview">
-          
-        </div>
-      </div>
-
-      <div class="topbar-right">
-        <button id="undo-btn" class="icon-btn" aria-label="Undo">↺</button>
-        <button id="redo-btn" class="icon-btn" aria-label="Redo">↻</button>
-        <button id="preview-btn" class="btn" aria-label="Open preview">Preview</button>
-        <button id="save-button" class="btn primary" aria-label="Save project">Zapisz</button>
-        <button id="publish-btn" class="btn accent" aria-label="Publish project">Publikuj</button>
-        <button id="right-toggle" class="icon-btn" aria-label="Toggle right sidebar">⚙</button>
-      </div>
+    <header>
+      <h1><span>BNK</span> Studio <span>X</span></h1>
     </header>
-
-    <!-- Main content: left sidebar, canvas, right sidebar -->
     <main id="main" class="main" role="main">
+      <div class="left-panel-wrapper">
+      <div id="left-panel" class="left-column" aria-label="tools panel">
+        <button class="icon-btn" aria-label="Add component">Dodaj</button>
+        <button class="icon-btn" aria-label="Show tree">Drzewko</button>
+        <button class="icon-btn" aria-label="Add image">Obrazy</button>
+        <button class="icon-btn" aria-label="Save">Zapisz</button>
+        <button class="icon-btn" aria-label="Publish">Publikuj</button>
+      </div>
+      </div>
 
-      <aside id="left-panel" class="panel left-panel" aria-label="Components panel">
-        <div class="panel-inner">
-          <div class="panel-search">
-            <label for="component-search" class="visually-hidden">Szukaj komponentów</label>
-            <input id="component-search" type="search" placeholder="Szukaj komponentów..." />
-          </div>
-
-          <div class="components-list" id="components-list">
-            <details open>
-              <summary>Layout</summary>
-              <ul>
-                <li class="component-item" data-type="section" draggable="true"><span class="icon">▦</span> Sekcja</li>
-                <li class="component-item" data-type="container" draggable="true"><span class="icon">▣</span> Kontener</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>Basics</summary>
-              <ul>
-                <li class="component-item" data-type="h1" draggable="true"><span class="icon">T</span> Nagłówek</li>
-                <li class="component-item" data-type="p" draggable="true"><span class="icon">p</span> Tekst</li>
-                <li class="component-item" data-type="button" draggable="true"><span class="icon">●</span> Przycisk</li>
-              </ul>
-            </details>
-          </div>
-        </div>
-      </aside>
-
-      <section id="canvas-area" class="canvas-area">
         <div class="iframe-wrapper">
-          <iframe id="iframe" src="./modules/Web-creator/Created_website/template.html" title="Podgląd strony" sandbox="allow-same-origin allow-scripts"></iframe>
+          <iframe id="iframe" src="./modules/Web-creator/Created_website/template.html" title="Podgląd strony"></iframe>
         </div>
-      </section>
 
-      <aside id="right-panel" class="panel right-panel" aria-label="Properties panel">
+      <div id="right-panel" class="panel right-panel" aria-label="Properties panel">
+        <button class="" aria-label="Close properties panel"><span class="crossed_1"></span><span class="crossed_2"></span></button>
         <div class="panel-inner">
-          <div class="props-header">
-            <h3>Właściwości</h3>
-            <button id="props-collapse" class="icon-btn" aria-label="Collapse properties">–</button>
-          </div>
-
-          <div class="prop-card">
-            <label for="prop-color">Kolor tła</label>
-            <input id="prop-color" type="color" value="#ffffff" />
-          </div>
-
-          <div class="prop-card">
-            <label for="prop-padding">Padding</label>
-            <input id="prop-padding" type="range" min="0" max="64" value="16" />
-          </div>
-
+            <h2 class="panel-title">Właściwości</h2>
+            <p class="panel-description">Edytuj właściwości wybranego elementu</p>
         </div>
-      </aside>
+        <div class="panel-inner">
+            <label for="el_name">Nazwa elementu</label>
+            <input type="text" id="el_name" name="el_name" placeholder="Nazwa elementu" />
+      </div>
+      <div class="panel-style">
+      </div>
 
     </main>
 

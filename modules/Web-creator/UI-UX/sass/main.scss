@@ -5,26 +5,8 @@
 @use 'layout/_layout' as *;
 @use 'visual/_visuals' as *;
 
-@use 'components/_toolbar' as toolbar;
-@use 'components/_sidebar' as sidebar;
-@use 'components/_canvas' as canvas;
-@use 'components/_properties' as properties;
-
-@use 'utilities/_scrollbars' as scrollbars;
-
 /* Theme (dark) */
 @use 'themes/_dark' as theme;
 
-/* Basic resets and utilities are in base */
-
-/* Compose components */
-@include toolbar.toolbar();
-@include sidebar.sidebar();
-@include canvas.canvas();
-@include properties.properties();
-@include scrollbars.scrollbars();
-
-/* Theme overrides */
-@include theme.dark();
 @import 'layout/layout.scss';
 @import 'base/base.scss';

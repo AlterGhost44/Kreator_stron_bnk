@@ -1,14 +1,6 @@
 @use '../base/_base' as *;
 
-@mixin dark() {
-  :root {
-    --bg: #061122;
-    --panel: #071329;
-    --muted: #9fb7ff;
-  }
-
   body { 
-    background: url('/base_assets/image/background.webp') no-repeat center center fixed;
+    background: url('/base_assets/image/background.webp') no-repeat;
 }
-  .panel { background: var(--panel); }
-}
+

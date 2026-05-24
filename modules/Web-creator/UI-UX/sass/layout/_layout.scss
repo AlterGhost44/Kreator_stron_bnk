@@ -1,68 +1,99 @@
-// Figma-like layout: fixed top toolbar, three-column main area
+@use '../base/_base' as *;
+
 body {
   margin: 0;
-  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 100dvw;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 56px;
-  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  height: 60px;
+  width: 100dvw;
+  background-color: $color-panel;
+  border-radius: 0 0 10px 10px;
 }
 
 main {
-  margin-top: 56px; // leave space for fixed header
   display: grid;
-  grid-template-columns: 1fr; // mobile: stacked
-  grid-template-areas:
-    "aside-left"
-    "iframe"
-    "aside-right";
-  gap: 0.75rem;
-  min-height: calc(100vh - 56px);
-  padding: 0.75rem;
+  grid-template-columns: 80px 1fr;
+
+  @include respond-up(desktop) {
+    grid-template-columns: 100px 1fr 250px;
+  }
 }
 
-.aside-wrapper {
-  grid-area: aside-left;
+.iframe-wrapper {
   width: 100%;
+  height: calc(100vh - 56px);
+  padding: 1rem;
 }
 
 #iframe {
-  grid-area: iframe;
   width: 100%;
-  height: 60vh;
-  border: none;
+  height: 100%;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-base;
+  background-color: $color-surface;
+}
+.left-panel-wrapper {
+  padding-top: 1rem;
+  width: 80px;
 }
 
-.aside-tree{
-  grid-area: aside-right;
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   width: 100%;
+  background-color: $color-panel;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-// Tablet: two-column layout
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: $color-text;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 140ms $easing-default, color 140ms $easing-default;
 
-@media (min-width: 640px) {
-  main {
-    grid-template-columns: 320px 1fr;
-    grid-template-areas: "aside-left iframe";
+  &:hover {
+    background-color: rgba(255,255,255,0.1);
   }
-
-  #iframe { height: 72vh; max-width: none; }
 }
 
-@media (min-width: 1024px) {
-  main {
-    grid-template-columns: 260px 1fr 260px;
-    grid-template-areas: "aside-left iframe aside-right";
-  }
-
-  #iframe { height: calc(100vh - 80px); }
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  left: 200px;
+  bottom: 850px;
+  width: 200px;
+  background-color: $color-panel;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 1;
 }
 
-// Utility: ensure direct children use border-box
-/* ensure children use border-box */
-* { box-sizing: border-box; }
+.panel-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
