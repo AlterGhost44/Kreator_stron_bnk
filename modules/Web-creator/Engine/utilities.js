@@ -36,9 +36,10 @@ function createNode (config) {
         type: null,
         sorce_link: null,
         content: null,
-        class_CSS: null
+        class_CSS: null,
+        style: null
     };
-
+    
     return {
         ...schemaNode,
         ...config
@@ -50,22 +51,6 @@ function createNode (config) {
 //**********   **********
 //*************************************
 
-function GenerateCSS () {
-    const vars = Object.values(style_css).flat().filter(item => item.varName).map(s =>  `${s.varName}: ${s.value};`)
-        .join("\n");
+function GenerateCSS () {}
 
-    
-    const rules = Object.keys(style_css).map(selector => { const props = style_css[selector].map(item => item.varName === "" ? `${item.prop}: ${item.value};` : `${item.prop}: var(${item.varName});`).join("\n");
-                                                        return `${selector} {\n${props}\n};`;})
-        .join("\n\n");
-
-   return `:root {\n${vars}\n\n\n${rules}\n}`;
-
-}
-
-function updater_css () {
-    const css = GenerateCSS ();
-    const iframedoc = document.getElementById('preview').contentDocument;
-
-    iframedoc.getElementById('dynamic-style').textContent = css;
-}
+function updater_css () {}

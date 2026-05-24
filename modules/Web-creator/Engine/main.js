@@ -4,7 +4,7 @@
 
 import { init } from "./init.js";
 import { autoSave } from "./data_menagment.js";
-import { menuToggle, toolbarVisible } from "../UI-UX/Scripts/menu-script.js"
+import "../UI-UX/scripts/ui-controls.js";
 
 //*************************************
 //********** INITIALIZE WEBSITE **********
@@ -12,6 +12,5 @@ import { menuToggle, toolbarVisible } from "../UI-UX/Scripts/menu-script.js"
 
 //init();
 //autoSave();
-console.log("JavaScript załadowany");
-menuToggle();
-toolbarVisible();
+//menuToggle();
+//toolbarVisible();

@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "sass": "^1.99.0"
+    "sass": "^1.100.0"
   },
   "scripts": {
     "build:wc": "sass modules/Web-creator/UI-UX/sass:modules/Web-creator/UI-UX/css",
