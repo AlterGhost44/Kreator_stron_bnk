@@ -4,7 +4,7 @@ $font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe
 $font-size-base: 16px;
 $line-height-base: 1.5;
 $color-text: #ffffff;
-$color-bg: #ffffff;
+$color-bg: #111111;
 $color-muted: #6b7280;
 $border-radius-base: 0.5rem;
 $color-primary: #0f62fe;
@@ -88,7 +88,6 @@ body {
   min-height: 100vh;
   background-color: $color-bg;
   color: $color-text;
-  font-family: inherit;
   font-size: fluid-type(0.95rem, 1rem);
   line-height: $line-height-base;
 }

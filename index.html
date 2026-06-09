@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Kreator stron</title>
+    <title>BNK Studio X</title>
 
     <script type="module" src="./modules/Web-creator/Engine/main.js" defer></script>
 
@@ -14,39 +14,37 @@
   </head>
 
   <body>
-    <header>
-      <h1><span>BNK</span> Studio <span>X</span></h1>
+
+    <header class="navbar">
+        <button id="tool-btn" class="menu-toggle">⚙️ Narzędzia</button>
+        <div class="logo"><img src="./base_assets/image/bitmapa.svg" alt="Logo" /></div>
+        <nav class="nav-links">
+            <a href="#">Zapisz</a>
+            <a href="#">Wczytaj</a>
+            <a href="#">Cofnij</a>
+            <a href="#">Następny</a>
+        </nav>
+        <button id="menu-btn" class="menu-toggle">☰ Menu</button>
     </header>
-    <main id="main" class="main" role="main">
-      <div class="left-panel-wrapper">
-      <div id="left-panel" class="left-column" aria-label="tools panel">
-        <button class="icon-btn" aria-label="Add component">Dodaj</button>
-        <button class="icon-btn" aria-label="Show tree">Drzewko</button>
-        <button class="icon-btn" aria-label="Add image">Obrazy</button>
-        <button class="icon-btn" aria-label="Save">Zapisz</button>
-        <button class="icon-btn" aria-label="Publish">Publikuj</button>
+
+    <div class="container">
+        
+        <aside class="left-aside">
+            <h3>Lewy Panel</h3>
+            <p>To jest lewy panel boczny, który ukrywa się w trybie mobilnym.</p>
+        </aside>
+
+        <main class="main-content">
+            <div class="iframe-container">
+                <iframe id="app" title="Iframe Content"></iframe>
+            </div>
+        </main>
+
+        <aside class="right-aside" id="rightAside">
+            <h3>Prawy Panel</h3>
+            <p>To jest prawy panel boczny. Na mobile otwiera się przyciskiem z nawigacji.</p>
+        </aside>
+
       </div>
-      </div>
-
-        <div class="iframe-wrapper">
-          <iframe id="iframe" src="./modules/Web-creator/Created_website/template.html" title="Podgląd strony"></iframe>
-        </div>
-
-      <div id="right-panel" class="panel right-panel" aria-label="Properties panel">
-        <button class="" aria-label="Close properties panel"><span class="crossed_1"></span><span class="crossed_2"></span></button>
-        <div class="panel-inner">
-            <h2 class="panel-title">Właściwości</h2>
-            <p class="panel-description">Edytuj właściwości wybranego elementu</p>
-        </div>
-        <div class="panel-inner">
-            <label for="el_name">Nazwa elementu</label>
-            <input type="text" id="el_name" name="el_name" placeholder="Nazwa elementu" />
-      </div>
-      <div class="panel-style">
-      </div>
-
-    </main>
-
-  </body>
-
+</body>
 </html>
