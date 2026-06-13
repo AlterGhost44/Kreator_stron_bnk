@@ -21,47 +21,6 @@ $easing-default: cubic-bezier(.2,.9,.2,1);
 $shadow-sm: 0 1px 3px rgba(16,24,40,0.06);
 $shadow-md: 0 6px 18px rgba(16,24,40,0.08);
 
-
-$breakpoint-desktop: 1024px;
-
-@mixin respond-up($breakpoint) {
-    @media (min-width: $breakpoint-desktop) { @content; }
-}
-
-@mixin respond-down($breakpoint) {
-  @if $breakpoint == sm {
-    @media (max-width: $breakpoint-sm) { @content; }
-  } @else if $breakpoint == md {
-    @media (max-width: $breakpoint-md) { @content; }
-  } @else if $breakpoint == lg {
-    @media (max-width: $breakpoint-lg) { @content; }
-  } @else if $breakpoint == xl {
-    @media (max-width: $breakpoint-xl) { @content; }
-  }
-}
-
-@function fluid-type($min-size, $max-size, $min-vw: 320px, $max-vw: 1200px) {
-  @return clamp(
-    $min-size,
-    calc(#{$min-size} + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw}))),
-    $max-size
-  );
-}
-
-// Small helpers
-@mixin card() {
-  background: $color-surface;
-  border-radius: $border-radius-base;
-  box-shadow: $shadow-sm;
-  border: 1px solid $color-border;
-}
-
-@mixin focus-ring($color: $color-focus) {
-  outline: none;
-  box-shadow: 0 0 0 4px $color;
-  border-radius: $border-radius-base;
-}
-
 :root {
   box-sizing: border-box;
   font-family: $font-family-base;
@@ -69,7 +28,6 @@ $breakpoint-desktop: 1024px;
   line-height: $line-height-base;
   color: $color-text;
   background-color: $color-bg;
-  text-rendering: optimizeLegibility;
 }
 
 *, *::before, *::after {
@@ -85,130 +43,9 @@ html {
 
 body {
   margin: 0;
+  width: 100vw;
   min-height: 100vh;
   background-color: $color-bg;
   color: $color-text;
-  font-size: fluid-type(0.95rem, 1rem);
   line-height: $line-height-base;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-p {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  @include respond-up(md) {
-    max-width: 720px;
-  }
-
-  @include respond-up(lg) {
-    max-width: 960px;
-  }
-
-  @include respond-up(xl) {
-    max-width: 1140px;
-  }
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-}
-
-.col {
-  flex: 1 1 0%;
-  min-width: 0;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-// Button base
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-  background: $color-primary;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 140ms $easing-default, box-shadow 180ms $easing-default;
-}
-
-.btn:hover { transform: translateY(-1px); box-shadow: $shadow-md; }
-.btn:active { transform: translateY(0); }
-
-// Toolbar base
-.toolbar {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
 }

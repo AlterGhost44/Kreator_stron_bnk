@@ -30,10 +30,16 @@
     <div class="container">
         
         <aside class="left-aside">
-            <h3>Lewy Panel</h3>
-            <p>To jest lewy panel boczny, który ukrywa się w trybie mobilnym.</p>
+            <h3>Ustawienia układu strony</h3>
+            <div>
+                <p>Ustawienia siatki:</p>
+                <div class="grid-settings">
+                    <input type="number" id="grid-columns" placeholder="Kolumny" min="1" />
+                    <input type="number" id="grid-rows" placeholder="Wiersze" min="1" />
+                    <button id="apply-grid" class="btn">Zastosuj</button>
+                </div>
+            </div>
         </aside>
-
         <main class="main-content">
             <div class="iframe-container">
                 <iframe id="app" title="Iframe Content"></iframe>
@@ -41,8 +47,25 @@
         </main>
 
         <aside class="right-aside" id="rightAside">
-            <h3>Prawy Panel</h3>
-            <p>To jest prawy panel boczny. Na mobile otwiera się przyciskiem z nawigacji.</p>
+            <h3>Narzędzia</h3>
+            <div class="tool-section">
+                <label for="type">Typ elementu:</label>
+                <select id="type" value="">
+                    <option >Nagłowek</option>
+                    <option>Paragraf</option>
+                    <option>Tekst</option>
+                </select>
+            </div>
+            <div class="tool-section">
+                <label for="content-input">Zawartość elementu:</label>
+                <textarea id="content-input" placeholder="Wprowadź treść elementu..."></textarea>
+                <label for="source_link">Link:</label>
+                <input type="url" id="source_link" placeholder="Wprowadź adres URL..." />
+            </div>
+            <div class="tool-section">
+                <label for="element-color">Kolor tekstu:</label>
+                <input type="color" id="element-color" value="#000000" />
+            </div>
         </aside>
 
       </div>

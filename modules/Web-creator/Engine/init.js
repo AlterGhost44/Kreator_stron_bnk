@@ -10,16 +10,24 @@ import { loadLocalStorage } from "./data_menagment.js";
 //*************************************
 //const iframe = document.getElementById('preview').contentDocument;
 export function init() {
-	loadLocalStorage();
+	//loadLocalStorage();
+	renderInitialState(state.body, document.getElementById('app').contentDocument.body);
 }
 
-function renderInitialState(nodes) {
+export function renderInitialState(nodes, parent) {
 	nodes.forEach(node => {
-		console.dir(node);
+
+		const element = document.createElement(node.type);
+
+		element.dataset.id = node.id;
+		if(node.content) element.textContent = node.content;
+
+		if(node.source_link) element.src = node.source_link;
+
+		parent.appendChild(element);
+
 		if (node.children.length > 0) {
-			renderInitialState(node.children);
+			renderInitialState(node.children, element);
 		}
 	});
 }
-
-renderInitialState(state.body);

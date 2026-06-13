@@ -12,7 +12,7 @@ import { render } from "./render.js";
 
 const config = {
   type: document.querySelector("#type").value,
-  source_link: document.querySelector("#source_link").value,
+  source_link: document.querySelector("#source-link").value,
   content: document.querySelector("#content-input").value,
 }                                   
 //*************************************
